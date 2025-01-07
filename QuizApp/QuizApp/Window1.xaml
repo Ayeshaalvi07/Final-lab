@@ -1,0 +1,54 @@
+﻿<Window x:Class="QuizApp.AddEditQuestionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Add/Edit Question" Height="400" Width="600">
+
+    <StackPanel Margin="10">
+        <!-- Question Text Input -->
+        <TextBlock Text="Question Text" />
+        <TextBox x:Name="QuestionTextBox" Width="400" Margin="0,5" />
+
+        <!-- Option A -->
+        <TextBlock Text="Option A" />
+        <TextBox x:Name="OptionATextBox" Width="400" Margin="0,5" />
+
+        <!-- Option B -->
+        <TextBlock Text="Option B" />
+        <TextBox x:Name="OptionBTextBox" Width="400" Margin="0,5" />
+
+        <!-- Option C -->
+        <TextBlock Text="Option C" />
+        <TextBox x:Name="OptionCTextBox" Width="400" Margin="0,5" />
+
+        <!-- Option D -->
+        <TextBlock Text="Option D" />
+        <TextBox x:Name="OptionDTextBox" Width="400" Margin="0,5" />
+
+        <!-- Correct Answer -->
+        <TextBlock Text="Correct Answer (A/B/C/D)" />
+        <TextBox x:Name="CorrectAnswerTextBox" Width="400" Margin="0,5" />
+
+        <!-- Marks -->
+        <TextBlock Text="Marks" />
+        <TextBox x:Name="MarksTextBox" Width="400" Margin="0,5" />
+
+        <!-- Time Limit -->
+        <TextBlock Text="Time Limit (in seconds)" />
+        <TextBox x:Name="TimeLimitTextBox" Width="400" Margin="0,5" />
+
+        <!-- Topic -->
+        <TextBlock Text="Topic" />
+        <TextBox x:Name="TopicTextBox" Width="400" Margin="0,5" />
+
+        <!-- Difficulty Level -->
+        <TextBlock Text="Difficulty Level" />
+        <TextBox x:Name="DifficultyLevelTextBox" Width="400" Margin="0,5" />
+
+        <!-- Buttons -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+            <Button Content="Save" Width="80" Click="SaveButton_Click" Margin="5"/>
+            <Button Content="Cancel" Width="80" Click="CancelButton_Click" Margin="5"/>
+        </StackPanel>
+    </StackPanel>
+
+</Window>
